@@ -1,0 +1,14 @@
+img{
+    width: 40px;
+}
+
+.buttons{
+    display: flex;
+    border: 2px solid black;
+    width: 10%;
+    justify-content: space-between;
+}
+
+.mobile-nav{
+    display: none;
+}

@@ -1,0 +1,147 @@
+/* Global View / Desktop View */
+body{
+    background-color: #EBEBEB;
+}
+
+.container{
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Asap', sans-serif;
+    padding-top: 150px;
+}
+
+.header-container{
+    background-color: rgb(62, 58, 58);
+    min-height: 100px;
+    margin-bottom: 40px;
+    position: fixed;
+    width: 100%;
+}
+
+header{
+    /* background-color: blue; */
+    max-width: 1024px;
+    margin: 0px auto;
+    min-height: 100px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.spanTag{
+    font-weight: bold;
+}
+
+.buttons{
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 10px 20px;
+}
+
+.hide-desktop{
+    display: none;
+}
+
+.col{
+    /* background-color: rgb(236, 106, 106);
+    height: 200px; */
+    width: 30%;
+    margin-bottom: 40px;
+    background-color: rgb(185, 129, 237);
+
+}
+
+.col img{
+    width: 100%;
+    height: auto;
+}
+
+.col p::first-line{
+    font-weight: bold;
+}
+
+.col p{
+    padding: 20px 20px;
+    font-size: 0.9rem;
+    text-align: center;
+    line-height: 1.25rem;
+}
+
+.mobile-wrapper{
+    display: none;
+}
+
+/* Tablet View */
+@media (max-width: 800px) {
+
+    header{
+        display: flex;
+    }
+
+    .col {
+        width: 47%;
+    }
+
+    .hide-desktop {
+        display: block;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .mobile-wrapper{
+        display: block;
+        padding-right: 30px;
+    }
+
+    .mob-nav{
+        display: none;
+        position: absolute;
+        padding-top: 10px;
+    }
+
+    .mob-nav .buttons{
+        display: block;
+        background-color: orange;
+        padding: 15px 30px;
+        margin-left: -70px;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 750px) {
+    .col{
+        width: 100%;
+    }
+
+    .hide-desktop{
+        display: block;
+    }
+
+    .header-container{
+        position: relative;
+    }
+
+    header{
+        /* display: block; */
+        text-align: center;
+    }
+
+    nav a{
+        display: block;
+    }
+
+    .logo{
+        padding: 40px 0;
+    }
+
+}

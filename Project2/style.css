@@ -1,0 +1,229 @@
+html{
+    background-image: linear-gradient(rgb(171, 129, 135), rgb(156, 124, 63));
+ 
+} 
+
+body{
+    background-image: url(images/image-lion-background.png);
+    background-repeat: no-repeat; 
+    background-position: top center;
+    font-family: 'Roboto', sans-serif;
+    color:aliceblue;
+    font-size: 1.25rem;
+}
+
+.container{
+    width: 1024px;
+    min-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    /* background-color: rgb(28, 159, 95); */
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+
+header img{
+    padding-top: 30px;
+}
+
+header nav{
+    padding-top: 60px;
+}
+
+main{
+    /* background-color: rgb(117, 193, 94); */
+    min-height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main2{
+    padding-top: 20px;
+    min-height: 300px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.card1, .card2, .card3{
+    padding: 20px 30px 20px 30px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.258);
+}
+
+.card1{
+    background-image: url(images/image-background-card1.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    width: 30%;
+}
+
+.card2{
+    background-image: url(images/image-background-card2.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    width: 30%;
+}
+
+.card3{
+    background-image: url(images/image-background-card3.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    width: 30%;
+}
+
+.herobox1{
+    /* background-color: rgb(241, 191, 191); */
+    flex: 2;
+    padding-right: 100px;
+}
+
+.herobox2{
+    /* background-color: rgb(176, 134, 134); */
+    flex: 1;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.258);
+}
+
+h1{
+    font-size: 3.25rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.258);
+}
+
+h2{
+    font-size: 2em;
+    font-family: 'Playfair Display', serif;
+    margin-top: 20px;
+}
+
+p{
+    line-height: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.cards p{
+    font-size: 0.85rem;
+    line-height: 1.2rem;
+    margin: 10px;
+}
+
+.cards i{
+    font-size: 100px;
+    padding-top: 30px;
+}
+
+.cards a{
+    color: white;
+    text-decoration: none;
+}
+
+.buttons{
+    background-color: white;
+    color: deeppink;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    padding: 10px 25px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.258);
+}
+
+.buttons:hover{
+    background-color: green;
+    transition-duration: 1s;
+}
+
+a.buttons{
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.navbuttons{
+    text-decoration: none;
+    color: white;
+    font-family: 'Playfair Display', serif;;
+    background-color: transparent;
+    border: 2px solid white;
+    margin-right: 20px;
+    padding: 10px 25px;
+    display: inline-block;
+    position: relative;
+}
+
+.navbuttons:hover{
+    background-color: rgb(135, 53, 53);
+    transition-duration: 200ms;
+} 
+
+.dropdown{
+    display: none;
+    position: absolute;
+    padding-top: 20px;
+    text-align: center;
+    z-index: 1;
+}
+
+.navbuttons:hover .dropdown{
+    display: block;
+}
+
+.dropdown .navbuttons{
+    width: 110px;
+    background-color: white;  
+    margin-left: -28px;
+}
+
+.dropdown .navbuttons:hover{
+    background-color: rgb(198, 123, 123);
+}
+
+.testimonials{
+    display: flex;
+    flex-wrap: wrap;
+    /* padding-left: 20px; */
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.tbox{
+    width: 37%;
+    padding: 50px;
+    border: 1px solid white;
+    margin-top: 50px;
+}
+
+.tbox p:last-of-type{
+	font-size: 1rem;
+    padding-left: 30px;
+}
+
+.inputwrapper{
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+input[type=text], input[type=email], textarea {
+    padding: 12px 20px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.85rem;
+    box-sizing: border-box;
+}
+
+.newline{
+    display: block;
+    margin-bottom: 10px;
+}
